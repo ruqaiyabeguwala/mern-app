@@ -8,7 +8,7 @@ const app = express();
 //middleware bodyparser
 app.use(bodyParser.json());
 
-
+mongoose.connect(config.get(mongoURI));
 //router
 app.use("/api/student", route);
 
