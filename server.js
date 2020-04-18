@@ -13,5 +13,5 @@ mongoose.connect(config.get(mongoURI));
 app.use("/api/student", route);
 
 //connect
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log("Running at port: " + port));
+
+app.listen(5000, () => console.log("Running at port: " + 5000));
